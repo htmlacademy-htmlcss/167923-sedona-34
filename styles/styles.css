@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -22,11 +30,42 @@ body {
   background-color: #ffffff;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 430px;
+}
+
+.navigation-user {
+  max-width: 270px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-size: 20px;
   color: #000000;
   text-decoration: none;
   font-weight: bold;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-banner {
+  display: block;
+  margin: 0 auto;
 }
 
 .welcome {
@@ -48,32 +87,40 @@ body {
   line-height: 36px;
 }
 
-.advantages-list {
-  text-align: center;
-}
-
-.advantages-item-main {
+.strong-blue {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.advantages-item {
-  color: #000000;
-  background-color: #82B3D3;
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.advantages-item-area {
+.light-blue {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-road {
+.mid-blue {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item-tourists {
-  background-color: rgba(131, 179, 211, 0.12);
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  align-items: stretch
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  flex-grow: 0;
+  width: 230px;
+  height: 200px;
+  padding: 92px 85px;
 }
 
 .advantages-title {
@@ -83,18 +130,11 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-title-inner {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.advantages-item-inner {
-  color: #000000;
-  background-color: #FFFFFF;
+.advantages-description {
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
+  width: 230px;
 }
 
 .contact-us {
@@ -108,6 +148,35 @@ body {
   background-image: url(../images/subscribe-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  width: 1200px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-phone-number {
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .subscribe-catalog {
@@ -154,7 +223,7 @@ body {
 }
 
 .select-control {
-  ont-weight: 400;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
