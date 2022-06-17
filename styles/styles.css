@@ -54,6 +54,11 @@ body {
   font-weight: bold;
 }
 
+.navigation-logo {
+  width: 139px;
+  margin-right: 47px;
+}
+
 .main-container {
   flex-grow: 1;
 }
@@ -114,6 +119,7 @@ body {
 .advantages-item {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   font-size: 18px;
   line-height: 21px;
@@ -187,13 +193,53 @@ body {
   background-repeat: no-repeat;
 }
 
+.catalog-products-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotels-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.hotel-cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 1056px;
+}
+
 .catalog-filter-header {
-  text-align: center;
-  color: #FFFFFF;
-  background-color: #000000;
+  color: #000000;
+  background-color: #FFFFFF;
   background-image: url(../images/catalog-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.breadcrumbs-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog-filter-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.catalog-filter-group-container {
+  display: flex;
+  flex-direction: row;
+}
+.catalog-filters-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-filter {
+  width: 150px;
 }
 
 .inner-header-title{
